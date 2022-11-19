@@ -1,0 +1,113 @@
+:root {
+	--softblue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--very-darkblue-mainBG: hsl(217, 54%, 11%);
+	--very-darkblue-cardBG: hsl(216, 50%, 16%);
+	--very-darkblue-line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+	}
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.4;
+	}
+	body {
+	font-family: sans-serif;
+	}
+	main {
+	background-color: var(--very-darkblue-mainBG);
+	color: var(--softblue);
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	}
+	.card {
+	background-color: var(--very-darkblue-cardBG);
+	padding: 1.3rem;
+	width: 280px;
+	border-radius: 20px;
+	}
+	.eye-icon-container {
+	height: 240px;
+	margin-bottom: 1.5rem;
+	background-image: url("../images/image-equilibrium.jpg");
+	background-position: center;
+	background-size: 100% 100%;
+	border-radius: 8px;
+	display: grid;
+	}
+	.eye-icon-container svg {
+	margin: auto;
+	display: none;
+	}
+	.eye-icon-container:hover {
+	background-image: 
+		linear-gradient(hsla(178, 100%, 50%, 0.5), 
+		hsla(178, 100%, 50%, 0.5)), 
+		url("../images/image-equilibrium.jpg");
+	}
+	.eye-icon-container:hover svg {
+	display: block;
+	}
+	.card h1 {
+	color: var(--white); 
+	font-size: 20px;
+	font-weight: 600;
+	}
+	.card h1:hover {
+	color: var(--cyan);
+	}
+	
+	h2 {
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: 300;
+	}
+	.wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	border-bottom: 2px solid var(--very-darkblue-line);
+	}
+	.wrapper svg {
+	margin-right: 8px;
+	}
+	.inner-wrapper {
+	display: flex;
+	align-items: center;
+	}
+	.top-span {
+	color: var(--cyan);
+	vertical-align: center;
+	}
+	.profile-container {
+	display: flex;
+	margin-top: 10px;
+	}
+	.profile-container img {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid var(--white);
+	margin-right: 10px;
+	}
+	.profile-container p {
+	align-self: center;
+	}
+	.profile-container a {
+	text-decoration: none;
+	color: var(--white);
+	}
+	.profile-container a:hover {
+	color: var(--cyan);
+	}
+	.attribution { 
+	font-size: 11px; 
+	text-align: center;
+	}
+	.attribution a { 
+	color: hsl(228, 45%, 44%); 
+	}
